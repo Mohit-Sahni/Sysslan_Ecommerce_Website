@@ -1,0 +1,1121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- ============================================= -->
+    <!-- TechMart Store - Level 5 E-Commerce Website   -->
+    <!-- Sysslan IT Solutions Web Development Internship -->
+    <!-- Project: Sysslan_Ecommerce_Website             -->
+    <!-- Level 5: Final Website Completion              -->
+    <!-- ============================================= -->
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#6c5ce7">
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="TechMart Store - Your one-stop shop for premium electronics, fashion, and accessories. Discover quality products at unbeatable prices.">
+    <meta name="keywords" content="TechMart, electronics, clothing, accessories, tech store, gadgets, headphones, smartwatch, online shopping, India">
+    <meta name="author" content="Sysslan IT Solutions">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph Meta -->
+    <meta property="og:title" content="TechMart Store - Premium Electronics & Fashion">
+    <meta property="og:description" content="Discover premium electronics, fashion & accessories at unbeatable prices.">
+    <meta property="og:type" content="website">
+
+    <!-- Website Title -->
+    <title>TechMart Store - Premium Electronics, Fashion & Accessories</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🛒</text></svg>">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@700;800;900&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome Icons CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- External CSS Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ============================== -->
+    <!-- PRELOADER                      -->
+    <!-- ============================== -->
+    <div id="preloader" class="preloader">
+        <div class="loader-container">
+            <div class="loader-ring">
+                <div></div><div></div><div></div><div></div>
+            </div>
+            <div class="loader-logo">
+                <span class="loader-icon">🛒</span>
+                <span class="loader-text">TechMart</span>
+            </div>
+            <p class="loader-subtitle">Loading amazing products...</p>
+        </div>
+    </div>
+
+
+    <!-- ============================== -->
+    <!-- HEADER SECTION                 -->
+    <!-- Level 5: Search Bar Added      -->
+    <!-- ============================== -->
+    <header id="header">
+        <div class="header-container">
+
+            <!-- Store Logo -->
+            <a href="#home" class="logo-area">
+                <div class="logo-icon-wrapper">
+                    <i class="fas fa-shopping-bag logo-icon"></i>
+                </div>
+                <h1 class="store-name">Tech<span class="store-name-accent">Mart</span></h1>
+            </a>
+
+            <!-- Navigation Menu -->
+            <nav id="main-nav">
+                <ul class="nav-menu" id="nav-menu">
+                    <li class="nav-item">
+                        <a href="#home" class="nav-link active">
+                            <i class="fas fa-home nav-icon"></i> Home
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#products" class="nav-link">
+                            <i class="fas fa-box-open nav-icon"></i> Products
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#testimonials" class="nav-link">
+                            <i class="fas fa-star nav-icon"></i> Reviews
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link">
+                            <i class="fas fa-envelope nav-icon"></i> Contact
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <!-- Header Actions -->
+            <div class="header-actions">
+                <!-- Search Toggle -->
+                <button class="header-action-btn search-toggle-btn" id="search-toggle" aria-label="Toggle Search">
+                    <i class="fas fa-search"></i>
+                </button>
+                <!-- Cart Icon -->
+                <button class="header-action-btn cart-icon-btn" id="cart-icon-btn" aria-label="Shopping Cart">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count" id="cart-count">0</span>
+                </button>
+            </div>
+
+            <!-- Hamburger Menu -->
+            <button class="hamburger" id="hamburger" aria-label="Toggle Menu">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+
+        </div>
+
+        <!-- Search Bar - Level 5 -->
+        <div class="search-bar-container" id="search-bar-container">
+            <div class="search-bar-wrapper">
+                <i class="fas fa-search search-bar-icon"></i>
+                <input type="text" id="product-search" class="search-bar-input" placeholder="Search products... (e.g., headphones, watch, hoodie)">
+                <button class="search-clear-btn" id="search-clear" aria-label="Clear search">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- ============================== -->
+    <!-- MAIN CONTENT                   -->
+    <!-- ============================== -->
+    <main>
+
+        <!-- ============================== -->
+        <!-- HERO SECTION                   -->
+        <!-- Level 5: Premium Hero          -->
+        <!-- ============================== -->
+        <section id="home" class="hero-section">
+            <div class="hero-bg-shapes">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+                <div class="shape shape-3"></div>
+                <div class="shape shape-4"></div>
+                <div class="shape shape-5"></div>
+            </div>
+
+            <div class="hero-particles" id="hero-particles"></div>
+
+            <div class="hero-grid">
+                <div class="hero-content animate-on-scroll" data-animation="fade-right">
+                    <div class="hero-badge">
+                        <i class="fas fa-bolt"></i> New Arrivals 2025
+                    </div>
+
+                    <h2 class="hero-heading">
+                        Welcome to<br>
+                        <span class="hero-heading-accent">TechMart Store</span>
+                    </h2>
+
+                    <p class="hero-subtitle">Discover Premium Electronics, Fashion & Accessories</p>
+
+                    <p class="hero-description">
+                        Your one-stop destination for the latest tech gadgets, fashion essentials, and premium accessories.
+                        Quality products at unbeatable prices with free shipping across India.
+                    </p>
+
+                    <div class="hero-buttons">
+                        <a href="#products" class="btn btn-primary btn-lg">
+                            <i class="fas fa-shopping-cart"></i> Shop Now
+                        </a>
+                        <a href="#products" class="btn btn-outline btn-lg">
+                            <i class="fas fa-compass"></i> Explore Products
+                        </a>
+                    </div>
+
+                    <div class="trust-badges">
+                        <div class="trust-item">
+                            <i class="fas fa-truck"></i>
+                            <span>Free Shipping</span>
+                        </div>
+                        <div class="trust-item">
+                            <i class="fas fa-shield-alt"></i>
+                            <span>Secure Payment</span>
+                        </div>
+                        <div class="trust-item">
+                            <i class="fas fa-undo"></i>
+                            <span>7-Day Returns</span>
+                        </div>
+                        <div class="trust-item">
+                            <i class="fas fa-headset"></i>
+                            <span>24/7 Support</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-image-area animate-on-scroll" data-animation="fade-left">
+                    <div class="hero-image-card">
+                        <img src="https://images.pexels.com/photos/3394650/pexels-photo-3394650.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="TechMart Store - Premium Products" class="hero-image">
+                        <div class="hero-image-overlay">
+                            <span class="hero-price-tag">
+                                <small>Starting at</small>
+                                ₹599
+                            </span>
+                        </div>
+                    </div>
+                    <div class="float-badge float-badge-1">
+                        <i class="fas fa-star"></i> Top Rated
+                    </div>
+                    <div class="float-badge float-badge-2">
+                        <i class="fas fa-fire"></i> Trending
+                    </div>
+                    <div class="float-badge float-badge-3">
+                        <i class="fas fa-percent"></i> 50% OFF
+                    </div>
+                </div>
+            </div>
+
+            <a href="#products" class="scroll-indicator">
+                <span>Scroll to explore</span>
+                <i class="fas fa-chevron-down"></i>
+            </a>
+        </section>
+
+
+        <!-- ============================== -->
+        <!-- STATS BAR                      -->
+        <!-- ============================== -->
+        <section class="stats-bar">
+            <div class="stats-container">
+                <div class="stat-item animate-on-scroll" data-animation="fade-up">
+                    <div class="stat-icon"><i class="fas fa-users"></i></div>
+                    <h3 class="stat-number" data-target="10000">0</h3>
+                    <p class="stat-label">Happy Customers</p>
+                </div>
+                <div class="stat-item animate-on-scroll" data-animation="fade-up">
+                    <div class="stat-icon"><i class="fas fa-box"></i></div>
+                    <h3 class="stat-number" data-target="500">0</h3>
+                    <p class="stat-label">Products</p>
+                </div>
+                <div class="stat-item animate-on-scroll" data-animation="fade-up">
+                    <div class="stat-icon"><i class="fas fa-award"></i></div>
+                    <h3 class="stat-number" data-target="50">0</h3>
+                    <p class="stat-label">Top Brands</p>
+                </div>
+                <div class="stat-item animate-on-scroll" data-animation="fade-up">
+                    <div class="stat-icon"><i class="fas fa-shipping-fast"></i></div>
+                    <h3 class="stat-number" data-target="100">0</h3>
+                    <p class="stat-label">Cities Served</p>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ============================== -->
+        <!-- PRODUCT SECTION                -->
+        <!-- Level 5: Search + Filters      -->
+        <!-- ============================== -->
+        <section id="products" class="products-section">
+            <div class="section-header animate-on-scroll" data-animation="fade-up">
+                <span class="section-tag"><i class="fas fa-fire"></i> Featured</span>
+                <h2 class="section-title">Our Products</h2>
+                <p class="section-subtitle">Explore our curated collection of premium products across multiple categories</p>
+                <div class="title-decoration">
+                    <span class="deco-line"></span>
+                    <span class="deco-diamond"><i class="fas fa-diamond"></i></span>
+                    <span class="deco-line"></span>
+                </div>
+            </div>
+
+            <!-- Inline Search Bar -->
+            <div class="products-toolbar animate-on-scroll" data-animation="fade-up">
+                <div class="inline-search-bar">
+                    <i class="fas fa-search"></i>
+                    <input type="text" id="inline-search" placeholder="Search products...">
+                </div>
+                <div class="category-filter">
+                    <button class="filter-btn active" data-category="all">
+                        <i class="fas fa-th-large"></i> <span>All</span>
+                    </button>
+                    <button class="filter-btn" data-category="electronics">
+                        <i class="fas fa-microchip"></i> <span>Electronics</span>
+                    </button>
+                    <button class="filter-btn" data-category="clothing">
+                        <i class="fas fa-tshirt"></i> <span>Clothing</span>
+                    </button>
+                    <button class="filter-btn" data-category="accessories">
+                        <i class="fas fa-gem"></i> <span>Accessories</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="product-count animate-on-scroll" data-animation="fade-up">
+                <span id="product-count-text">Showing all <strong>12</strong> products</span>
+            </div>
+
+            <!-- Product Grid -->
+            <div class="product-container" id="product-grid">
+
+                <!-- ELECTRONICS (4) -->
+                <article class="product-card animate-on-scroll" data-animation="fade-up" data-category="electronics" data-id="1" data-name="Wireless Headphones" data-price="1999">
+                    <div class="product-badge">Best Seller</div>
+                    <div class="product-wishlist"><i class="far fa-heart"></i></div>
+                    <div class="product-image-wrapper">
+                        <img src="https://images.pexels.com/photos/3394650/pexels-photo-3394650.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Wireless Headphones" class="product-image" loading="lazy">
+                        <div class="product-quick-view">
+                            <button class="quick-view-btn"><i class="fas fa-eye"></i> Quick View</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-category-label"><i class="fas fa-microchip"></i> Electronics</div>
+                        <h3 class="product-name">Wireless Headphones</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                            <span class="rating-count">(128)</span>
+                        </div>
+                        <p class="product-description">Premium wireless headphones with crystal-clear sound and 30-hour battery life.</p>
+                        <div class="product-details-content" id="details-1">
+                            <div class="details-inner">
+                                <h4><i class="fas fa-list-ul"></i> Specifications</h4>
+                                <ul><li><strong>Driver:</strong> 40mm Dynamic</li><li><strong>Battery:</strong> 30 Hours</li><li><strong>Bluetooth:</strong> 5.0</li></ul>
+                                <h4><i class="fas fa-check-circle"></i> Features</h4>
+                                <ul><li>Active Noise Cancellation</li><li>Foldable Design</li><li>Touch Controls</li></ul>
+                            </div>
+                        </div>
+                        <div class="product-price-row">
+                            <p class="product-price">₹1,999</p>
+                            <p class="product-price-old">₹3,499</p>
+                            <span class="product-discount">-43%</span>
+                        </div>
+                        <div class="product-actions">
+                            <button class="view-details-btn" data-target="details-1"><i class="fas fa-info-circle"></i> Details</button>
+                            <button class="add-to-cart-btn" data-id="1" data-name="Wireless Headphones" data-price="1999"><i class="fas fa-shopping-cart"></i> <span>Add to Cart</span></button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card animate-on-scroll" data-animation="fade-up" data-category="electronics" data-id="2" data-name="Smart Watch Pro" data-price="4999">
+                    <div class="product-badge product-badge-new">New</div>
+                    <div class="product-wishlist"><i class="far fa-heart"></i></div>
+                    <div class="product-image-wrapper">
+                        <img src="https://images.pexels.com/photos/12564670/pexels-photo-12564670.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Smart Watch Pro" class="product-image" loading="lazy">
+                        <div class="product-quick-view">
+                            <button class="quick-view-btn"><i class="fas fa-eye"></i> Quick View</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-category-label"><i class="fas fa-microchip"></i> Electronics</div>
+                        <h3 class="product-name">Smart Watch Pro</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                            <span class="rating-count">(85)</span>
+                        </div>
+                        <p class="product-description">Advanced smartwatch with health monitoring, GPS, and 7-day battery.</p>
+                        <div class="product-details-content" id="details-2">
+                            <div class="details-inner">
+                                <h4><i class="fas fa-list-ul"></i> Specifications</h4>
+                                <ul><li><strong>Display:</strong> 1.4" AMOLED</li><li><strong>Battery:</strong> 7 Days</li><li><strong>Water:</strong> 5ATM</li></ul>
+                                <h4><i class="fas fa-check-circle"></i> Features</h4>
+                                <ul><li>Heart Rate Monitor</li><li>Sleep Tracking</li><li>100+ Sport Modes</li></ul>
+                            </div>
+                        </div>
+                        <div class="product-price-row">
+                            <p class="product-price">₹4,999</p>
+                            <p class="product-price-old">₹7,999</p>
+                            <span class="product-discount">-37%</span>
+                        </div>
+                        <div class="product-actions">
+                            <button class="view-details-btn" data-target="details-2"><i class="fas fa-info-circle"></i> Details</button>
+                            <button class="add-to-cart-btn" data-id="2" data-name="Smart Watch Pro" data-price="4999"><i class="fas fa-shopping-cart"></i> <span>Add to Cart</span></button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card animate-on-scroll" data-animation="fade-up" data-category="electronics" data-id="3" data-name="Bluetooth Speaker" data-price="2499">
+                    <div class="product-badge product-badge-hot">Hot</div>
+                    <div class="product-wishlist"><i class="far fa-heart"></i></div>
+                    <div class="product-image-wrapper">
+                        <img src="https://images.pexels.com/photos/29581125/pexels-photo-29581125.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Bluetooth Speaker" class="product-image" loading="lazy">
+                        <div class="product-quick-view">
+                            <button class="quick-view-btn"><i class="fas fa-eye"></i> Quick View</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-category-label"><i class="fas fa-microchip"></i> Electronics</div>
+                        <h3 class="product-name">Bluetooth Speaker</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            <span class="rating-count">(210)</span>
+                        </div>
+                        <p class="product-description">Portable speaker with 360° sound, waterproof IPX7, and 20-hour playback.</p>
+                        <div class="product-details-content" id="details-3">
+                            <div class="details-inner">
+                                <h4><i class="fas fa-list-ul"></i> Specifications</h4>
+                                <ul><li><strong>Output:</strong> 20W Stereo</li><li><strong>Battery:</strong> 20 Hours</li><li><strong>Waterproof:</strong> IPX7</li></ul>
+                                <h4><i class="fas fa-check-circle"></i> Features</h4>
+                                <ul><li>360° Surround Sound</li><li>Party Mode</li><li>Built-in Power Bank</li></ul>
+                            </div>
+                        </div>
+                        <div class="product-price-row">
+                            <p class="product-price">₹2,499</p>
+                            <p class="product-price-old">₹4,499</p>
+                            <span class="product-discount">-44%</span>
+                        </div>
+                        <div class="product-actions">
+                            <button class="view-details-btn" data-target="details-3"><i class="fas fa-info-circle"></i> Details</button>
+                            <button class="add-to-cart-btn" data-id="3" data-name="Bluetooth Speaker" data-price="2499"><i class="fas fa-shopping-cart"></i> <span>Add to Cart</span></button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card animate-on-scroll" data-animation="fade-up" data-category="electronics" data-id="4" data-name="Gaming Mouse" data-price="1299">
+                    <div class="product-wishlist"><i class="far fa-heart"></i></div>
+                    <div class="product-image-wrapper">
+                        <img src="https://images.pexels.com/photos/12877898/pexels-photo-12877898.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Gaming Mouse" class="product-image" loading="lazy">
+                        <div class="product-quick-view">
+                            <button class="quick-view-btn"><i class="fas fa-eye"></i> Quick View</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-category-label"><i class="fas fa-microchip"></i> Electronics</div>
+                        <h3 class="product-name">Gaming Mouse</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                            <span class="rating-count">(156)</span>
+                        </div>
+                        <p class="product-description">High-precision RGB gaming mouse with 16000 DPI and ergonomic design.</p>
+                        <div class="product-details-content" id="details-4">
+                            <div class="details-inner">
+                                <h4><i class="fas fa-list-ul"></i> Specifications</h4>
+                                <ul><li><strong>DPI:</strong> Up to 16000</li><li><strong>Buttons:</strong> 8 Programmable</li><li><strong>Weight:</strong> 85g</li></ul>
+                                <h4><i class="fas fa-check-circle"></i> Features</h4>
+                                <ul><li>RGB Lighting</li><li>On-board Memory</li><li>Braided Cable</li></ul>
+                            </div>
+                        </div>
+                        <div class="product-price-row">
+                            <p class="product-price">₹1,299</p>
+                            <p class="product-price-old">₹2,499</p>
+                            <span class="product-discount">-48%</span>
+                        </div>
+                        <div class="product-actions">
+                            <button class="view-details-btn" data-target="details-4"><i class="fas fa-info-circle"></i> Details</button>
+                            <button class="add-to-cart-btn" data-id="4" data-name="Gaming Mouse" data-price="1299"><i class="fas fa-shopping-cart"></i> <span>Add to Cart</span></button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- CLOTHING (4) -->
+                <article class="product-card animate-on-scroll" data-animation="fade-up" data-category="clothing" data-id="5" data-name="Men's Hoodie" data-price="1499">
+                    <div class="product-badge product-badge-trending">Trending</div>
+                    <div class="product-wishlist"><i class="far fa-heart"></i></div>
+                    <div class="product-image-wrapper">
+                        <img src="https://images.pexels.com/photos/14241847/pexels-photo-14241847.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=650&w=940" alt="Men's Hoodie" class="product-image" loading="lazy">
+                        <div class="product-quick-view">
+                            <button class="quick-view-btn"><i class="fas fa-eye"></i> Quick View</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-category-label product-category-clothing"><i class="fas fa-tshirt"></i> Clothing</div>
+                        <h3 class="product-name">Men's Hoodie</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            <span class="rating-count">(342)</span>
+                        </div>
+                        <p class="product-description">Premium cotton blend hoodie with fleece lining. Available in multiple colors.</p>
+                        <div class="product-details-content" id="details-5">
+                            <div class="details-inner">
+                                <h4><i class="fas fa-list-ul"></i> Specifications</h4>
+                                <ul><li><strong>Material:</strong> 80% Cotton, 20% Polyester</li><li><strong>Sizes:</strong> S, M, L, XL, XXL</li></ul>
+                                <h4><i class="fas fa-check-circle"></i> Features</h4>
+                                <ul><li>Fleece Lined</li><li>Kangaroo Pocket</li><li>Ribbed Cuffs</li></ul>
+                            </div>
+                        </div>
+                        <div class="product-price-row">
+                            <p class="product-price">₹1,499</p>
+                            <p class="product-price-old">₹2,499</p>
+                            <span class="product-discount">-40%</span>
+                        </div>
+                        <div class="product-actions">
+                            <button class="view-details-btn" data-target="details-5"><i class="fas fa-info-circle"></i> Details</button>
+                            <button class="add-to-cart-btn" data-id="5" data-name="Men's Hoodie" data-price="1499"><i class="fas fa-shopping-cart"></i> <span>Add to Cart</span></button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card animate-on-scroll" data-animation="fade-up" data-category="clothing" data-id="6" data-name="Casual T-Shirt" data-price="599">
+                    <div class="product-wishlist"><i class="far fa-heart"></i></div>
+                    <div class="product-image-wrapper">
+                        <img src="https://images.pexels.com/photos/8148576/pexels-photo-8148576.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=650&w=940" alt="Casual T-Shirt" class="product-image" loading="lazy">
+                        <div class="product-quick-view">
+                            <button class="quick-view-btn"><i class="fas fa-eye"></i> Quick View</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-category-label product-category-clothing"><i class="fas fa-tshirt"></i> Clothing</div>
+                        <h3 class="product-name">Casual T-Shirt</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                            <span class="rating-count">(89)</span>
+                        </div>
+                        <p class="product-description">100% organic cotton t-shirt with breathable fabric. Minimalist design.</p>
+                        <div class="product-details-content" id="details-6">
+                            <div class="details-inner">
+                                <h4><i class="fas fa-list-ul"></i> Specifications</h4>
+                                <ul><li><strong>Material:</strong> 100% Organic Cotton</li><li><strong>Colors:</strong> 8 Options</li></ul>
+                                <h4><i class="fas fa-check-circle"></i> Features</h4>
+                                <ul><li>Pre-Shrunk</li><li>Tagless Label</li><li>Eco-Friendly</li></ul>
+                            </div>
+                        </div>
+                        <div class="product-price-row">
+                            <p class="product-price">₹599</p>
+                            <p class="product-price-old">₹999</p>
+                            <span class="product-discount">-40%</span>
+                        </div>
+                        <div class="product-actions">
+                            <button class="view-details-btn" data-target="details-6"><i class="fas fa-info-circle"></i> Details</button>
+                            <button class="add-to-cart-btn" data-id="6" data-name="Casual T-Shirt" data-price="599"><i class="fas fa-shopping-cart"></i> <span>Add to Cart</span></button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card animate-on-scroll" data-animation="fade-up" data-category="clothing" data-id="7" data-name="Denim Jacket" data-price="2299">
+                    <div class="product-badge product-badge-new">New</div>
+                    <div class="product-wishlist"><i class="far fa-heart"></i></div>
+                    <div class="product-image-wrapper">
+                        <img src="https://images.pexels.com/photos/16428734/pexels-photo-16428734.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=650&w=940" alt="Denim Jacket" class="product-image" loading="lazy">
+                        <div class="product-quick-view">
+                            <button class="quick-view-btn"><i class="fas fa-eye"></i> Quick View</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-category-label product-category-clothing"><i class="fas fa-tshirt"></i> Clothing</div>
+                        <h3 class="product-name">Denim Jacket</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                            <span class="rating-count">(178)</span>
+                        </div>
+                        <p class="product-description">Classic denim jacket with vintage wash. Durable construction.</p>
+                        <div class="product-details-content" id="details-7">
+                            <div class="details-inner">
+                                <h4><i class="fas fa-list-ul"></i> Specifications</h4>
+                                <ul><li><strong>Material:</strong> 100% Denim</li><li><strong>Closure:</strong> Button Front</li></ul>
+                                <h4><i class="fas fa-check-circle"></i> Features</h4>
+                                <ul><li>Vintage Wash</li><li>Metal Buttons</li><li>Inner Pocket</li></ul>
+                            </div>
+                        </div>
+                        <div class="product-price-row">
+                            <p class="product-price">₹2,299</p>
+                            <p class="product-price-old">₹3,999</p>
+                            <span class="product-discount">-42%</span>
+                        </div>
+                        <div class="product-actions">
+                            <button class="view-details-btn" data-target="details-7"><i class="fas fa-info-circle"></i> Details</button>
+                            <button class="add-to-cart-btn" data-id="7" data-name="Denim Jacket" data-price="2299"><i class="fas fa-shopping-cart"></i> <span>Add to Cart</span></button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card animate-on-scroll" data-animation="fade-up" data-category="clothing" data-id="8" data-name="Sports Shoes" data-price="2999">
+                    <div class="product-badge product-badge-hot">Hot</div>
+                    <div class="product-wishlist"><i class="far fa-heart"></i></div>
+                    <div class="product-image-wrapper">
+                        <img src="https://images.pexels.com/photos/24702077/pexels-photo-24702077.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Sports Shoes" class="product-image" loading="lazy">
+                        <div class="product-quick-view">
+                            <button class="quick-view-btn"><i class="fas fa-eye"></i> Quick View</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-category-label product-category-clothing"><i class="fas fa-tshirt"></i> Clothing</div>
+                        <h3 class="product-name">Sports Shoes</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            <span class="rating-count">(423)</span>
+                        </div>
+                        <p class="product-description">Lightweight athletic sneakers with responsive cushioning for running.</p>
+                        <div class="product-details-content" id="details-8">
+                            <div class="details-inner">
+                                <h4><i class="fas fa-list-ul"></i> Specifications</h4>
+                                <ul><li><strong>Upper:</strong> Mesh + Synthetic</li><li><strong>Sizes:</strong> UK 6-12</li></ul>
+                                <h4><i class="fas fa-check-circle"></i> Features</h4>
+                                <ul><li>Memory Foam</li><li>Breathable</li><li>Anti-Slip</li></ul>
+                            </div>
+                        </div>
+                        <div class="product-price-row">
+                            <p class="product-price">₹2,999</p>
+                            <p class="product-price-old">₹5,499</p>
+                            <span class="product-discount">-45%</span>
+                        </div>
+                        <div class="product-actions">
+                            <button class="view-details-btn" data-target="details-8"><i class="fas fa-info-circle"></i> Details</button>
+                            <button class="add-to-cart-btn" data-id="8" data-name="Sports Shoes" data-price="2999"><i class="fas fa-shopping-cart"></i> <span>Add to Cart</span></button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- ACCESSORIES (4) -->
+                <article class="product-card animate-on-scroll" data-animation="fade-up" data-category="accessories" data-id="9" data-name="Travel Backpack" data-price="1799">
+                    <div class="product-badge">Best Seller</div>
+                    <div class="product-wishlist"><i class="far fa-heart"></i></div>
+                    <div class="product-image-wrapper">
+                        <img src="https://images.pexels.com/photos/17862339/pexels-photo-17862339.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=650&w=940" alt="Travel Backpack" class="product-image" loading="lazy">
+                        <div class="product-quick-view">
+                            <button class="quick-view-btn"><i class="fas fa-eye"></i> Quick View</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-category-label product-category-accessories"><i class="fas fa-gem"></i> Accessories</div>
+                        <h3 class="product-name">Travel Backpack</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                            <span class="rating-count">(267)</span>
+                        </div>
+                        <p class="product-description">35L waterproof backpack with USB charging port and laptop sleeve.</p>
+                        <div class="product-details-content" id="details-9">
+                            <div class="details-inner">
+                                <h4><i class="fas fa-list-ul"></i> Specifications</h4>
+                                <ul><li><strong>Capacity:</strong> 35L</li><li><strong>Material:</strong> Waterproof Nylon</li></ul>
+                                <h4><i class="fas fa-check-circle"></i> Features</h4>
+                                <ul><li>USB Port</li><li>Anti-Theft</li><li>Padded Straps</li></ul>
+                            </div>
+                        </div>
+                        <div class="product-price-row">
+                            <p class="product-price">₹1,799</p>
+                            <p class="product-price-old">₹2,999</p>
+                            <span class="product-discount">-40%</span>
+                        </div>
+                        <div class="product-actions">
+                            <button class="view-details-btn" data-target="details-9"><i class="fas fa-info-circle"></i> Details</button>
+                            <button class="add-to-cart-btn" data-id="9" data-name="Travel Backpack" data-price="1799"><i class="fas fa-shopping-cart"></i> <span>Add to Cart</span></button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card animate-on-scroll" data-animation="fade-up" data-category="accessories" data-id="10" data-name="Sunglasses" data-price="899">
+                    <div class="product-badge product-badge-trending">Trending</div>
+                    <div class="product-wishlist"><i class="far fa-heart"></i></div>
+                    <div class="product-image-wrapper">
+                        <img src="https://images.pexels.com/photos/32677231/pexels-photo-32677231.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Sunglasses" class="product-image" loading="lazy">
+                        <div class="product-quick-view">
+                            <button class="quick-view-btn"><i class="fas fa-eye"></i> Quick View</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-category-label product-category-accessories"><i class="fas fa-gem"></i> Accessories</div>
+                        <h3 class="product-name">Sunglasses</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                            <span class="rating-count">(134)</span>
+                        </div>
+                        <p class="product-description">UV400 polarized sunglasses with premium tortoiseshell frame.</p>
+                        <div class="product-details-content" id="details-10">
+                            <div class="details-inner">
+                                <h4><i class="fas fa-list-ul"></i> Specifications</h4>
+                                <ul><li><strong>Lens:</strong> Polarized</li><li><strong>Protection:</strong> UV400</li></ul>
+                                <h4><i class="fas fa-check-circle"></i> Features</h4>
+                                <ul><li>Anti-Glare</li><li>Scratch Resistant</li><li>Case Included</li></ul>
+                            </div>
+                        </div>
+                        <div class="product-price-row">
+                            <p class="product-price">₹899</p>
+                            <p class="product-price-old">₹1,599</p>
+                            <span class="product-discount">-44%</span>
+                        </div>
+                        <div class="product-actions">
+                            <button class="view-details-btn" data-target="details-10"><i class="fas fa-info-circle"></i> Details</button>
+                            <button class="add-to-cart-btn" data-id="10" data-name="Sunglasses" data-price="899"><i class="fas fa-shopping-cart"></i> <span>Add to Cart</span></button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card animate-on-scroll" data-animation="fade-up" data-category="accessories" data-id="11" data-name="Wrist Watch" data-price="3499">
+                    <div class="product-badge product-badge-premium">Premium</div>
+                    <div class="product-wishlist"><i class="far fa-heart"></i></div>
+                    <div class="product-image-wrapper">
+                        <img src="https://images.pexels.com/photos/16958879/pexels-photo-16958879.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Wrist Watch" class="product-image" loading="lazy">
+                        <div class="product-quick-view">
+                            <button class="quick-view-btn"><i class="fas fa-eye"></i> Quick View</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-category-label product-category-accessories"><i class="fas fa-gem"></i> Accessories</div>
+                        <h3 class="product-name">Wrist Watch</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            <span class="rating-count">(312)</span>
+                        </div>
+                        <p class="product-description">Elegant analog watch with stainless steel case and sapphire crystal.</p>
+                        <div class="product-details-content" id="details-11">
+                            <div class="details-inner">
+                                <h4><i class="fas fa-list-ul"></i> Specifications</h4>
+                                <ul><li><strong>Movement:</strong> Japanese Quartz</li><li><strong>Water:</strong> 5ATM</li></ul>
+                                <h4><i class="fas fa-check-circle"></i> Features</h4>
+                                <ul><li>Sapphire Glass</li><li>Luminous Hands</li><li>2 Year Warranty</li></ul>
+                            </div>
+                        </div>
+                        <div class="product-price-row">
+                            <p class="product-price">₹3,499</p>
+                            <p class="product-price-old">₹5,999</p>
+                            <span class="product-discount">-42%</span>
+                        </div>
+                        <div class="product-actions">
+                            <button class="view-details-btn" data-target="details-11"><i class="fas fa-info-circle"></i> Details</button>
+                            <button class="add-to-cart-btn" data-id="11" data-name="Wrist Watch" data-price="3499"><i class="fas fa-shopping-cart"></i> <span>Add to Cart</span></button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card animate-on-scroll" data-animation="fade-up" data-category="accessories" data-id="12" data-name="Laptop Sleeve" data-price="799">
+                    <div class="product-wishlist"><i class="far fa-heart"></i></div>
+                    <div class="product-image-wrapper">
+                        <img src="https://images.pexels.com/photos/8346916/pexels-photo-8346916.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Laptop Sleeve" class="product-image" loading="lazy">
+                        <div class="product-quick-view">
+                            <button class="quick-view-btn"><i class="fas fa-eye"></i> Quick View</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-category-label product-category-accessories"><i class="fas fa-gem"></i> Accessories</div>
+                        <h3 class="product-name">Laptop Sleeve</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                            <span class="rating-count">(98)</span>
+                        </div>
+                        <p class="product-description">Slim protective sleeve with shock-absorbing padding for 13-15" laptops.</p>
+                        <div class="product-details-content" id="details-12">
+                            <div class="details-inner">
+                                <h4><i class="fas fa-list-ul"></i> Specifications</h4>
+                                <ul><li><strong>Size:</strong> 13-15 inch</li><li><strong>Material:</strong> Neoprene</li></ul>
+                                <h4><i class="fas fa-check-circle"></i> Features</h4>
+                                <ul><li>Water Resistant</li><li>Accessory Pocket</li><li>Slim Profile</li></ul>
+                            </div>
+                        </div>
+                        <div class="product-price-row">
+                            <p class="product-price">₹799</p>
+                            <p class="product-price-old">₹1,299</p>
+                            <span class="product-discount">-38%</span>
+                        </div>
+                        <div class="product-actions">
+                            <button class="view-details-btn" data-target="details-12"><i class="fas fa-info-circle"></i> Details</button>
+                            <button class="add-to-cart-btn" data-id="12" data-name="Laptop Sleeve" data-price="799"><i class="fas fa-shopping-cart"></i> <span>Add to Cart</span></button>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+
+            <div class="no-products-message" id="no-products-message">
+                <i class="fas fa-search"></i>
+                <h3>No products found</h3>
+                <p>Try a different search term or category</p>
+                <button class="btn btn-primary" id="reset-filters">Show All Products</button>
+            </div>
+        </section>
+
+
+        <!-- ============================== -->
+        <!-- FEATURES SECTION               -->
+        <!-- ============================== -->
+        <section class="features-section">
+            <div class="section-header animate-on-scroll" data-animation="fade-up">
+                <span class="section-tag"><i class="fas fa-gem"></i> Why Us</span>
+                <h2 class="section-title">Why Choose TechMart?</h2>
+                <p class="section-subtitle">We're committed to providing the best shopping experience</p>
+                <div class="title-decoration">
+                    <span class="deco-line"></span>
+                    <span class="deco-diamond"><i class="fas fa-diamond"></i></span>
+                    <span class="deco-line"></span>
+                </div>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-card animate-on-scroll" data-animation="fade-up">
+                    <div class="feature-icon-wrapper"><i class="fas fa-medal"></i></div>
+                    <h3 class="feature-title">Genuine Products</h3>
+                    <p class="feature-desc">100% authentic products sourced directly from authorized dealers.</p>
+                </div>
+                <div class="feature-card animate-on-scroll" data-animation="fade-up">
+                    <div class="feature-icon-wrapper"><i class="fas fa-shipping-fast"></i></div>
+                    <h3 class="feature-title">Free Delivery</h3>
+                    <p class="feature-desc">Free express delivery across India within 2-3 business days.</p>
+                </div>
+                <div class="feature-card animate-on-scroll" data-animation="fade-up">
+                    <div class="feature-icon-wrapper"><i class="fas fa-hand-holding-usd"></i></div>
+                    <h3 class="feature-title">Best Prices</h3>
+                    <p class="feature-desc">Competitive pricing with regular discounts up to 50% off.</p>
+                </div>
+                <div class="feature-card animate-on-scroll" data-animation="fade-up">
+                    <div class="feature-icon-wrapper"><i class="fas fa-headset"></i></div>
+                    <h3 class="feature-title">24/7 Support</h3>
+                    <p class="feature-desc">Round-the-clock customer support via chat, email, and phone.</p>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ============================== -->
+        <!-- TESTIMONIALS SECTION           -->
+        <!-- Level 5: Customer Reviews      -->
+        <!-- ============================== -->
+        <section id="testimonials" class="testimonials-section">
+            <div class="section-header animate-on-scroll" data-animation="fade-up">
+                <span class="section-tag"><i class="fas fa-star"></i> Reviews</span>
+                <h2 class="section-title">What Our Customers Say</h2>
+                <p class="section-subtitle">Real reviews from real customers who love shopping with us</p>
+                <div class="title-decoration">
+                    <span class="deco-line"></span>
+                    <span class="deco-diamond"><i class="fas fa-diamond"></i></span>
+                    <span class="deco-line"></span>
+                </div>
+            </div>
+
+            <div class="testimonials-grid">
+                <div class="testimonial-card animate-on-scroll" data-animation="fade-up">
+                    <div class="testimonial-quote"><i class="fas fa-quote-left"></i></div>
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"Amazing quality products! I ordered the wireless headphones and they exceeded my expectations. The sound quality is incredible and delivery was super fast. Highly recommend TechMart!"</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">RK</div>
+                        <div class="author-info">
+                            <h4>Rahul Kumar</h4>
+                            <p>Mumbai, Maharashtra</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-verified"><i class="fas fa-check-circle"></i> Verified Purchase</div>
+                </div>
+
+                <div class="testimonial-card testimonial-featured animate-on-scroll" data-animation="fade-up">
+                    <div class="testimonial-quote"><i class="fas fa-quote-left"></i></div>
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"Best online shopping experience! The smartwatch I purchased works perfectly. Customer support was very helpful when I had questions. Free shipping was a bonus. Will definitely shop here again!"</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">PS</div>
+                        <div class="author-info">
+                            <h4>Priya Sharma</h4>
+                            <p>Chennai, Tamil Nadu</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-verified"><i class="fas fa-check-circle"></i> Verified Purchase</div>
+                </div>
+
+                <div class="testimonial-card animate-on-scroll" data-animation="fade-up">
+                    <div class="testimonial-quote"><i class="fas fa-quote-left"></i></div>
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p class="testimonial-text">"Great selection of fashion items. The hoodie I bought is super comfortable and the quality is top-notch. Prices are very competitive compared to other stores. Love the 7-day return policy!"</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">AV</div>
+                        <div class="author-info">
+                            <h4>Amit Verma</h4>
+                            <p>Delhi, India</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-verified"><i class="fas fa-check-circle"></i> Verified Purchase</div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ============================== -->
+        <!-- CONTACT SECTION                -->
+        <!-- ============================== -->
+        <section id="contact" class="contact-section">
+            <div class="section-header animate-on-scroll" data-animation="fade-up">
+                <span class="section-tag"><i class="fas fa-paper-plane"></i> Reach Out</span>
+                <h2 class="section-title">Contact Us</h2>
+                <p class="section-subtitle">We'd love to hear from you. Get in touch with us anytime.</p>
+                <div class="title-decoration">
+                    <span class="deco-line"></span>
+                    <span class="deco-diamond"><i class="fas fa-diamond"></i></span>
+                    <span class="deco-line"></span>
+                </div>
+            </div>
+
+            <div class="contact-wrapper">
+                <div class="contact-info-grid">
+                    <div class="contact-item animate-on-scroll" data-animation="fade-up">
+                        <div class="contact-icon-wrapper"><i class="fas fa-envelope"></i></div>
+                        <h3 class="contact-label">Email</h3>
+                        <p class="contact-detail"><a href="mailto:support@techmart.com">support@techmart.com</a></p>
+                        <p class="contact-sub">We reply within 24 hours</p>
+                    </div>
+                    <div class="contact-item animate-on-scroll" data-animation="fade-up">
+                        <div class="contact-icon-wrapper"><i class="fas fa-phone-alt"></i></div>
+                        <h3 class="contact-label">Phone</h3>
+                        <p class="contact-detail"><a href="tel:+919940069581">+91 9940069581</a></p>
+                        <p class="contact-sub">Mon - Sat, 9AM - 8PM</p>
+                    </div>
+                    <div class="contact-item animate-on-scroll" data-animation="fade-up">
+                        <div class="contact-icon-wrapper"><i class="fas fa-map-marker-alt"></i></div>
+                        <h3 class="contact-label">Address</h3>
+                        <p class="contact-detail">Chennai, Tamil Nadu 600095, India</p>
+                        <p class="contact-sub">Visit our showroom</p>
+                    </div>
+                </div>
+
+                <div class="contact-form-container animate-on-scroll" data-animation="fade-up">
+                    <div class="contact-form-card">
+                        <div class="form-header">
+                            <i class="fas fa-paper-plane"></i>
+                            <h3>Send us a Message</h3>
+                            <p>Fill out the form and we'll get back to you soon</p>
+                        </div>
+                        <form id="contact-form" class="contact-form" novalidate>
+                            <div class="form-group">
+                                <label for="contact-name"><i class="fas fa-user"></i> Your Name</label>
+                                <input type="text" id="contact-name" name="name" placeholder="Enter your full name" required>
+                                <span class="error-message" id="name-error"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="contact-email"><i class="fas fa-envelope"></i> Email Address</label>
+                                <input type="email" id="contact-email" name="email" placeholder="Enter your email address" required>
+                                <span class="error-message" id="email-error"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="contact-message"><i class="fas fa-comment-alt"></i> Your Message</label>
+                                <textarea id="contact-message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+                                <span class="error-message" id="message-error"></span>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-lg btn-block" id="form-submit-btn">
+                                <span class="btn-text"><i class="fas fa-paper-plane"></i> Send Message</span>
+                                <span class="btn-loading"><i class="fas fa-spinner fa-spin"></i> Sending...</span>
+                            </button>
+                        </form>
+                        <div class="form-success-message" id="form-success">
+                            <div class="success-icon"><i class="fas fa-check-circle"></i></div>
+                            <h4>Message Sent Successfully!</h4>
+                            <p>Thank you for contacting us. We'll get back to you within 24 hours.</p>
+                            <button class="btn btn-outline" id="send-another-btn"><i class="fas fa-redo"></i> Send Another Message</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ============================== -->
+        <!-- NEWSLETTER SECTION             -->
+        <!-- ============================== -->
+        <section class="newsletter-section">
+            <div class="newsletter-content animate-on-scroll" data-animation="fade-up">
+                <i class="fas fa-bell newsletter-icon"></i>
+                <h2 class="newsletter-title">Stay Updated!</h2>
+                <p class="newsletter-desc">Subscribe to get notified about new products, exclusive deals, and special offers.</p>
+                <form class="newsletter-form" id="newsletter-form">
+                    <input type="email" placeholder="Enter your email address" class="newsletter-input" id="newsletter-email" required>
+                    <button type="submit" class="btn btn-primary" id="newsletter-btn">
+                        Subscribe <i class="fas fa-arrow-right"></i>
+                    </button>
+                </form>
+                <p class="newsletter-note"><i class="fas fa-lock"></i> We respect your privacy. Unsubscribe anytime.</p>
+            </div>
+        </section>
+
+    </main>
+
+
+    <!-- ============================== -->
+    <!-- FOOTER - Level 5               -->
+    <!-- Professional Footer            -->
+    <!-- ============================== -->
+    <footer id="footer">
+        <div class="footer-top">
+            <div class="footer-container">
+                <div class="footer-grid">
+                    <!-- About Us -->
+                    <div class="footer-col footer-about">
+                        <div class="footer-logo">
+                            <div class="logo-icon-wrapper logo-icon-wrapper-footer"><i class="fas fa-shopping-bag"></i></div>
+                            <h3 class="footer-store-name">Tech<span class="store-name-accent">Mart</span></h3>
+                        </div>
+                        <p class="footer-about-text">
+                            TechMart Store is your trusted destination for premium electronics, fashion, and accessories. 
+                            We deliver quality products at unbeatable prices with exceptional customer service since 2025.
+                        </p>
+                        <div class="footer-socials">
+                            <a href="#" class="social-link" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="social-link" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="social-link" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                            <a href="#" class="social-link" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+
+                    <!-- Quick Links -->
+                    <div class="footer-col">
+                        <h4 class="footer-heading">Quick Links</h4>
+                        <ul class="footer-link-list">
+                            <li><a href="#home"><i class="fas fa-chevron-right"></i> Home</a></li>
+                            <li><a href="#products"><i class="fas fa-chevron-right"></i> Products</a></li>
+                            <li><a href="#testimonials"><i class="fas fa-chevron-right"></i> Reviews</a></li>
+                            <li><a href="#contact"><i class="fas fa-chevron-right"></i> Contact Us</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Categories -->
+                    <div class="footer-col">
+                        <h4 class="footer-heading">Categories</h4>
+                        <ul class="footer-link-list">
+                            <li><a href="#products"><i class="fas fa-chevron-right"></i> Electronics</a></li>
+                            <li><a href="#products"><i class="fas fa-chevron-right"></i> Clothing</a></li>
+                            <li><a href="#products"><i class="fas fa-chevron-right"></i> Accessories</a></li>
+                            <li><a href="#products"><i class="fas fa-chevron-right"></i> New Arrivals</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Support -->
+                    <div class="footer-col">
+                        <h4 class="footer-heading">Support</h4>
+                        <ul class="footer-link-list">
+                            <li><a href="#"><i class="fas fa-chevron-right"></i> FAQ</a></li>
+                            <li><a href="#"><i class="fas fa-chevron-right"></i> Shipping Info</a></li>
+                            <li><a href="#"><i class="fas fa-chevron-right"></i> Returns Policy</a></li>
+                            <li><a href="#"><i class="fas fa-chevron-right"></i> Track Order</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Contact Information -->
+                    <div class="footer-col footer-contact-col">
+                        <h4 class="footer-heading">Contact Info</h4>
+                        <ul class="footer-contact-list">
+                            <li>
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>TechMart Store<br>123 Tech Street, T. Nagar<br>Chennai, Tamil Nadu 600095, India</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-envelope"></i>
+                                <a href="mailto:support@techmart.com">support@techmart.com</a>
+                            </li>
+                            <li>
+                                <i class="fas fa-phone-alt"></i>
+<a href="tel:+919940069581">+91 9940069581</a>
+                            </li>
+                            <li>
+                                <i class="fas fa-clock"></i>
+                                <span>Mon - Sat: 9:00 AM - 8:00 PM</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+            <div class="footer-container">
+                <div class="footer-bottom-content">
+                    <p class="copyright-text">
+                        &copy; <span id="current-year">2025</span> TechMart Store. All Rights Reserved.
+                    </p>
+                    <div class="footer-badges">
+                        <span class="payment-badge"><i class="fas fa-lock"></i> Secure Payments</span>
+                        <span class="payment-badge"><i class="fas fa-shield-alt"></i> SSL Encrypted</span>
+                    </div>
+                    <p class="internship-credit">
+                        <i class="fas fa-code"></i> Developed by <strong>Sysslan IT Solutions</strong> Web Development Internship
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- ============================== -->
+    <!-- FIXED ELEMENTS                 -->
+    <!-- ============================== -->
+
+    <!-- Scroll to Top -->
+    <button id="scroll-top-btn" class="scroll-top-btn" aria-label="Scroll to top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- Toast Notification -->
+    <div id="cart-toast" class="cart-toast">
+        <i class="fas fa-check-circle"></i>
+        <span>Product added to cart!</span>
+    </div>
+
+    <!-- Cart Sidebar -->
+    <div class="cart-sidebar-overlay" id="cart-overlay"></div>
+    <div class="cart-sidebar" id="cart-sidebar">
+        <div class="cart-sidebar-header">
+            <h3><i class="fas fa-shopping-cart"></i> Your Cart (<span id="cart-sidebar-count">0</span>)</h3>
+            <button class="cart-close-btn" id="cart-close-btn"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="cart-sidebar-body" id="cart-items">
+            <div class="cart-empty" id="cart-empty">
+                <i class="fas fa-shopping-basket"></i>
+                <p>Your cart is empty</p>
+                <a href="#products" class="btn btn-primary" id="start-shopping">Start Shopping</a>
+            </div>
+        </div>
+        <div class="cart-sidebar-footer" id="cart-footer" style="display: none;">
+            <div class="cart-total">
+                <span>Total:</span>
+                <span class="cart-total-amount" id="cart-total">₹0</span>
+            </div>
+            <button class="btn btn-primary btn-block" id="checkout-btn">
+                <i class="fas fa-lock"></i> Proceed to Checkout
+            </button>
+        </div>
+    </div>
+
+
+    <!-- External JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>
